@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Cassannet';
-	src: url('../fonts/Cassannet.eot');
-	src: local('☺'), url('../fonts/Cassannet.woff') format('woff'), url('../fonts/Cassannet.ttf') format('truetype'), url('../fonts/Cassannet.svg') format('svg');
+	src: url('../font/Cassannet.eot');
+	src: local('☺'), url('../font/Cassannet.woff') format('woff'), url('../font/Cassannet.ttf') format('truetype'), url('../font/Cassannet.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

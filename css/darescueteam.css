@@ -140,11 +140,17 @@ background-color: #090909;
   margin: 1em;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #D4D4D4;
+  color: whitesmoke;
   font-size: 1.2em;
   border-radius: 5px;
+  /*border-left:5px solid #cc0000;*/
+  /*background-color: #C6C6C6;*/
 
   }
+
+  #tweets .l-box .icon-quote-left, #tweets .l-box .icon-quote-right{
+    color: #cc0000
+  } 
 
 @media (max-width: 767px){
   #tweets .l-box{
@@ -157,11 +163,13 @@ background-color: #090909;
   background-color: #CC0000;
   color:white;
   font-weight: bold;
-
-  -moz-box-shadow: 0 0 10px 0px #444;
-  -webkit-box-shadow: 0 0 10px 0px #444;
-  box-shadow: 0 0 10px 0px #444;
 }
+
+#tweets .l-box:hover .icon-quote-left, #tweets .l-box:hover .icon-quote-right
+{
+  color:white;
+}
+
 #tweets .l-box:hover .when, #tweets .l-box:hover .link{
   visibility: visible;
 }

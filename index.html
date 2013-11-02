@@ -37,7 +37,7 @@
                 var maxtuits = (tuits.length > 6)?6:tuits.length;
                 $('#timeline').html('');
                 for(var i=0;i<maxtuits;i++){
-                    var markup = '<div class="pure-u-1-3"><div class="l-box"><p class="tweet">__tweet__</p><div class="pure-u-1-2 when">__when__</div><div class="pure-u-1-2 link"><a href="__link__" target="_blank"><i class="icon-twitter"></i> View<a></div></div></div>';
+                    var markup = '<div class="pure-u-1-3"><div class="l-box"><p class="tweet"><i class="icon-quote-left"></i> __tweet__ <i class="icon-quote-right"></i></p><div class="pure-u-1-2 when">__when__</div><div class="pure-u-1-2 link"><a href="__link__" target="_blank"><i class="icon-twitter"></i> View<a></div></div></div>';
                     markup = markup.replace('__tweet__', tuits[i].text);
                     var when = '';
                     if (!isNaN(tuits[i].when.getTime())) {

@@ -42,9 +42,13 @@
                 var maxtuits = (tuits.length > 6)?6:tuits.length;
                 $('#timeline').html('');
                 for(var i=0;i<maxtuits;i++){
-                    var markup = '<div class="pure-u-1-3"><div class="l-box"><p class="tweet">__tweet__</p><div class="pure-u-1-2 when">__when__</div><div class="pure-u-1-2 link"><a href="__link__" target="_blank"><i class="icon-twitter"></i><a></div></div></div>';
+                    var markup = '<div class="pure-u-1-3"><div class="l-box"><p class="tweet">__tweet__</p><div class="pure-u-1-2 when">__when__</div><div class="pure-u-1-2 link"><a href="__link__" target="_blank"><i class="icon-twitter"></i> View<a></div></div></div>';
                     markup = markup.replace('__tweet__', tuits[i].text);
-                    markup = markup.replace('__when__', tuits[i].when.toDateString());
+                    var when = '';
+                    if (!isNaN(tuits[i].when.getTime())) {
+                        when = tuits[i].when.toDateString();
+                    }
+                    markup = markup.replace('__when__', when);
                     markup = markup.replace('__link__', tuits[i].link);
 
                     $('#timeline').append($(markup));
@@ -55,7 +59,9 @@
         </script>
 
 
-        <img src="img/redcross.svg" id="bg"/>
+        <img src="img/redcross.png" id="bg"/>
+               
+ 
         <h1>da Rescue Team</h1>
         <p class="motto">Is your project <span>in danger</span>?</p>
         <a class="twitter-timeline"  href="https://twitter.com/daRescueTeam"  data-widget-id="396019933143769089"></a>

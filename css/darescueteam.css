@@ -49,7 +49,8 @@ body {
 
 #one{
   background-color: white;
-  height:100vh;
+  /*height:100vh;*/
+  min-height: 780px;
 }
 
 #one h1{
@@ -63,15 +64,27 @@ body {
   }
 }
 
+#team{
+  text-align: left;
+  background-color: #c6c6c6;
+  /*min-height: 100vh;*/
+  min-height: 780px;
+}
+
+#team .header img{
+  border-radius: 50px;
+  max-width: 100px;
+}
+
 #twitter-widget-0, .twitter-timeline{
   display: none;
 }
 
 #tweets{
   text-align: left;
-  background-color: #c6c6c6;
-  min-height: 100vh;
-
+  /*background-color: #c6c6c6;*/
+  /*min-height: 100vh;*/
+min-height: 780px;
 }
 
 .margin-20{
@@ -94,7 +107,7 @@ body {
   }
 }
 
-#tweets h2{
+.title h2{
   font-family: 'Lato', sans-serif;
   font-weight: 200;
   font-size: 2.5em;
@@ -103,20 +116,20 @@ body {
 
 
 @media (max-width: 767px){
-  #tweets h2{
+  .title h2{
    font-size:2em;
   }
 }
 
-#tweets .title{
+.title{
   padding: 1em;
-  margin: 1em;
+  margin: 0 1em 1em 1em;
 }
 
 @media (max-width: 767px){
-  #tweets .title{
+  .title{
     padding: 0.5em;
-    margin: 0.5em;
+    margin: 0 0.5em 0.5em 0.5em;
   }
 }
 
@@ -229,4 +242,30 @@ body {
 @keyframes rotation {
   from {transform: rotate(0deg);}
   to {transform: rotate(359deg);}
+}
+
+
+.member{
+  /*background-color: #444;*/
+  font-family: 'Lato';
+  font-size: 1.2em;
+  color: #222;
+  margin:20px;
+  padding:50px;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.member .header{
+  font-family: 'Cassannet';
+  font-size: 1.5em;
+}
+
+.member:hover{
+  background-color: #CC0000;
+  color:white;
+    -moz-box-shadow: 0 0 10px 0px #000;
+  -webkit-box-shadow: 0 0 10px 0px #000;
+  box-shadow: 0 0 10px 0px #000;
 }

@@ -76,6 +76,45 @@ body {
   max-width: 100px;
 }
 
+#rescue{
+  text-align: left;
+  min-height: 780px;
+  background-color: #090909;
+  color: whitesmoke;
+
+}
+
+#rescue .l-box{
+  margin: 0 1em 0 1em;
+  padding: 1em;
+}
+
+.joy{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  text-align: center;
+  margin: 1em;
+}
+
+.statement{
+  font-family: courier, fixed;
+  font-size: 2em;
+  border-radius: 5px;
+  margin: 0 1em 0 1em;
+
+  background-color: #CC0000;
+  color:white;
+  -moz-box-shadow: 0 0 10px 0px #000;
+  -webkit-box-shadow: 0 0 10px 0px #000;
+  box-shadow: 0 0 10px 0px #000;
+}
+
+.caret {
+  background: whitesmoke;
+}
+
+
 #twitter-widget-0, .twitter-timeline{
   display: none;
 }

@@ -81,7 +81,13 @@ body {
   min-height: 780px;
   background-color: #090909;
   color: whitesmoke;
+}
 
+#contact{
+  text-align: left;
+  min-height: 780px;
+  background-color: white;
+  color: #090909;
 }
 
 #rescue .l-box{
@@ -110,13 +116,25 @@ body {
   box-shadow: 0 0 10px 0px #000;
 }
 
+.further{
+  font-size: 0.5em;
+}
+
+.mail{
+  font-family: courier, fixed;
+  font-size: 0.8em;
+}
+
+.badge{
+  color: #cc0000;
+}
 .caret {
   background: whitesmoke;
 }
 
 
 #twitter-widget-0, .twitter-timeline{
-  display: none;
+  /*display: none;*/
 }
 
 #tweets{
@@ -319,4 +337,12 @@ background-color: #090909;
     -moz-box-shadow: 0 0 10px 0px #000;
   -webkit-box-shadow: 0 0 10px 0px #000;
   box-shadow: 0 0 10px 0px #000;
+}
+
+.icon-quote-left {
+  margin-right: 5px;
+}
+
+.icon-quote-right {
+  margin-left: 5px;
 }

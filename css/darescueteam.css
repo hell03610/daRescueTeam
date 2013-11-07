@@ -9,6 +9,8 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
+
 #bg {
   width: 40%;
   max-width: 400px;
@@ -23,6 +25,9 @@ body {
   }
 }
 
+#one{
+  text-align: center;
+}
 
 .motto{
   font-family: 'Lato', sans-serif;
@@ -43,32 +48,39 @@ body {
 }
 
 
-.center{
-  text-align: center;
-}
 
-#one{
-  background-color: white;
-  /*height:100vh;*/
+.section{
   min-height: 780px;
+  text-align: left;
 }
 
-#one h1{
+@media (max-width: 767px){
+  .section{
+   min-height: inherit;
+  }
+}
+
+.white{
+  background-color: white;
+}
+
+.section h1{
   font-family:'Cassannet',Sans-Serif;
   font-size: 5em; 
 }
 
 @media (max-width: 767px){
-  #one h1{
+  .section h1{
    font-size:3em;
   }
 }
 
-#team{
-  text-align: left;
+.center{
+  text-align: center;
+}
+
+.grey {
   background-color: #c6c6c6;
-  /*min-height: 100vh;*/
-  min-height: 780px;
 }
 
 #team .header img{
@@ -76,19 +88,11 @@ body {
   max-width: 100px;
 }
 
-#rescue{
-  text-align: left;
-  min-height: 780px;
+.dark{
   background-color: #090909;
   color: whitesmoke;
 }
 
-#contact{
-  text-align: left;
-  min-height: 780px;
-  background-color: white;
-  color: #090909;
-}
 
 #rescue .l-box{
   margin: 0 1em 0 1em;
@@ -132,22 +136,13 @@ body {
   background: whitesmoke;
 }
 
-
 #twitter-widget-0, .twitter-timeline{
-  /*display: none;*/
+  display: none;
 }
 
-#tweets{
-  text-align: left;
-  /*background-color: #c6c6c6;*/
-  /*min-height: 100vh;*/
-min-height: 780px;
-background-color: #090909;
-}
-
-.margin-20{
-  margin-top: 20px;
-  margin-bottom: 20px;
+.padding-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .loading {
@@ -158,7 +153,6 @@ background-color: #090909;
   margin-bottom: 100px;
   color: #D4D4D4;
 }
-
 
 @media (max-width: 767px){
   .loading{
@@ -172,7 +166,6 @@ background-color: #090909;
   font-size: 2.5em;
   color:#CC0000;
 }
-
 
 @media (max-width: 767px){
   .title h2{
@@ -200,9 +193,6 @@ background-color: #090909;
   color: whitesmoke;
   font-size: 1.2em;
   border-radius: 5px;
-  /*border-left:5px solid #cc0000;*/
-  /*background-color: #C6C6C6;*/
-
   }
 
   #tweets .l-box .icon-quote-left, #tweets .l-box .icon-quote-right{
@@ -214,7 +204,6 @@ background-color: #090909;
     margin: 0 1em 0 1em;
   }
 }
-
 
 #tweets .l-box:hover{
   background-color: #CC0000;
@@ -315,7 +304,6 @@ background-color: #090909;
 
 
 .member{
-  /*background-color: #444;*/
   font-family: 'Lato';
   font-size: 1.2em;
   color: #222;
@@ -346,26 +334,6 @@ background-color: #090909;
 .icon-quote-right {
   margin-left: 5px;
 }
-
-.invisible{
-  display: none;
-}
-
-.visible{
-  display: inline;
-}
-
-/*#contant .joy {
-  display: none;
-}
-
-.invisible{
-  display: none;
-}
-
-#contant .joy .visible {
-  display: inline;
-}*/
 
 .animated {
 -webkit-animation-duration: 0.3s;

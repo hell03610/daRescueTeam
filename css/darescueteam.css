@@ -346,3 +346,34 @@ background-color: #090909;
 .icon-quote-right {
   margin-left: 5px;
 }
+
+.invisible{
+  display: none;
+}
+
+.visible{
+  display: inline;
+}
+
+/*#contant .joy {
+  display: none;
+}
+
+.invisible{
+  display: none;
+}
+
+#contant .joy .visible {
+  display: inline;
+}*/
+
+.animated {
+-webkit-animation-duration: 0.3s;
+-moz-animation-duration: 0.3s;
+-o-animation-duration: 0.3s;
+animation-duration: 0.3s;
+-webkit-animation-fill-mode: both;
+-moz-animation-fill-mode: both;
+-o-animation-fill-mode: both;
+animation-fill-mode: both;
+}

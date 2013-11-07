@@ -31,9 +31,7 @@ function start() {
     writeLine(indexLine);    
 }
 
-var readyStateCheckInterval = setInterval(function () {
-    if (document.readyState === "complete") {
-        start();
-        clearInterval(readyStateCheckInterval);
-    }
-}, 10);
+document.addEventListener("DOMContentLoaded", function(event) {
+    start();
+});
+

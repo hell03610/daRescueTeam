@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>da Rescue Team</title>
     <script src="js/domo.js"></script>
+    <script src="js/classList.shim.js"></script>
     <link rel="stylesheet" href="css/base-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -19,58 +20,8 @@
     <div class="main">
 
        <div id="one">
-        <script>
-
-            setTimeout(function(){
-                var feed = document.querySelector('#twitter-widget-0').contentDocument.querySelector('.h-feed');
-                var tweets = feed.querySelectorAll('.tweet');
-                var tuits = [];
-                for(var i=0;i < tweets.length; i++){
-                    var tuit = {
-                        text: tweets[i].querySelector('.e-entry-title').textContent,
-                        when: new Date(tweets[i].querySelector('time').getAttribute('datetime')),
-                        link: tweets[i].querySelector('.u-url').getAttribute('href')
-                    };
-                    tuits.push(tuit);
-                }
-
-                var maxtuits = (tuits.length > 6)?6:tuits.length;
-                var timeline = document.querySelector('#timeline');
-                timeline.innerHTML = '';
-                for(var i=0;i<maxtuits;i++){
-                    //var markup = document.createDocumentFragment();
-                    var when = '';
-                    if (!isNaN(tuits[i].when.getTime())) {
-                        when = tuits[i].when.toDateString();
-                    }
-                   
-                    var markup = DIV({'class':'pure-u-1-3'},
-                                DIV({'class':'l-box'},
-                                  P({'class':'tweet'}, 
-                                    I({'class':'icon-quote-left'}),
-                                    tuits[i].text,
-                                    I({'class':'icon-quote-right'})
-                                    ),
-                                  DIV({'class':'pure-u-1-2 when'}, when),
-                                  DIV({'class':'pure-u-1-2 link'}, 
-                                    A({'href':tuits[i].link, 'target':'_blank'},
-                                        I({'class':'icon-twitter'}),
-                                        "View"
-                                        )
-                                    )
-                                )
-                            );
-                    timeline.appendChild(markup);
-                }
-            }, 5000);
-
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-        </script>
-
-
+        <script src="js/twitter.js"></script>
         <img src="img/redcross.png" id="bg"/>
-               
- 
         <h1>da Rescue Team</h1>
         <p class="motto"><span>Intensive care</span> for software</p>
         <a class="twitter-timeline"  href="https://twitter.com/daRescueTeam"  data-widget-id="396019933143769089"></a>
@@ -192,16 +143,10 @@
         </div>
         <div class="pure-g-r">
         <div class="pure-u-1">
-            <div class="l-box joy one">
-            <p>We become the most <strong>concerned</strong> people with the problems</p>
-            <p>We liaise shoulder by shoulder with <strong>managers</strong> and <strong>developers</strong></p>
-            <p>We love the <strong>business</strong> as much as the <strong>software</strong></p>
+            <div class="l-box joy motto">
+               
             </div>
-            <div class="l-box joy two">
-            <p>We become the most <strong>concerned</strong> people with the problems</p>
-            <p>We liaise shoulder by shoulder with <strong>managers</strong> and <strong>developers</strong></p>
-            <p>We love the <strong>business</strong> as much as the <strong>software</strong></p>
-            </div>
+           
         </div>
         <div class="pure-u-1">
             <div class="l-box joy">
@@ -213,7 +158,29 @@
     </div>
 
 </div>
+
 <script type="text/javascript" src="js/realistic-typewriter.js"></script>
 <script type="text/javascript" src="js/rescue.js"></script>
+<script type="text/javascript" src="js/motto.js"></script>
+<script type="text/javascript">
+    
+var paragraphs = [];
+
+paragraphs[0] = "<p>We become the most <strong>concerned</strong> people with the problems</p>"
+paragraphs[1] = "<p>We liaise shoulder by shoulder with <strong>managers</strong> and <strong>developers</strong></p>"
+paragraphs[2] = "<p>We love the <strong>business</strong> as much as the <strong>software</strong></p>"
+paragraphs[3] = "<p>We focus on <strong>delivery</strong></p>"
+paragraphs[4] = "<p>We cover the damaged areas with <strong>useful</strong> tests</p>"
+paragraphs[5] = "<p>We drastically <strong>reduce</strong> the number of bugs</p>"
+paragraphs[6] = "<p>We solve <strong>performance</strong> issues</p>"
+paragraphs[7] = "<p>We <strong>train</strong> the current developers</p>"
+paragraphs[8] = "<p>We provide <strong>extra</strong> availability</p>"
+paragraphs[9] = "<p>We <strong>enjoy</strong> doing it</p>"
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+        var motto = new Motto({paragraphs: paragraphs});
+        motto.start();
+  });
+</script>
 </body>
 </html>

@@ -2,7 +2,7 @@ var sentences = ['da Rescue Team',
                  '==============', 
                  ' ', 
                  '+ 4 developers', 
-                 '+ 200.000 lines of code', 
+                 '+ 200,000 lines of code', 
                  '+ 0% coverage', 
                  '+ dozens of defects', 
                  '+ tons of smells'];

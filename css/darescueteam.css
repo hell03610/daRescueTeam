@@ -1,12 +1,44 @@
-html {
+
+/*solo hacer esto si estamos en laptop*/
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+
+
+@media (max-width: 1024px){
+  body{
+   position: inherit;
+   height: auto;
+  }
+  .section{
+    padding-bottom: 50px;
+  }
+}
+
+.section{
   height: 100%;
 }
+
+
+@media (max-width: 1024px){
+  .pure-u-1-4 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px){
+  .pure-u-1-4 {
+    width: 100%;
+  }
+}
+
 body {
   padding: 0;
   text-align: center;
   position: relative;
   margin: 0;
-  height: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,7 +82,7 @@ body {
 
 
 .section{
-  min-height: 780px;
+  min-height: 100%;
   text-align: left;
 }
 
@@ -345,3 +377,40 @@ animation-duration: 0.3s;
 -o-animation-fill-mode: both;
 animation-fill-mode: both;
 }
+
+@media (max-width: 480px){
+  .statement{
+    font-size: 1em;
+  }
+
+  .joy {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  #team .header img {
+    max-width: 80px;
+  }
+
+  .member {
+    padding:30px;
+    height: auto;
+  }
+
+  .title h2 {
+    font-weight: 400;
+  }
+  
+}
+
+.member .description {
+    padding-bottom: 20px;
+  }
+
+  .member .social a {
+    color:white;
+    text-decoration: none;
+  }

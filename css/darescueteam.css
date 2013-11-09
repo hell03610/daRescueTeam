@@ -1,10 +1,12 @@
 
-/*solo hacer esto si estamos en laptop*/
+/*
+ * GENERAL
+ */
+
 html, body {
   height: 100%;
   position: relative;
 }
-
 
 
 @media (max-width: 1024px){
@@ -43,44 +45,6 @@ body {
 }
 
 
-#bg {
-  width: 40%;
-  max-width: 400px;
-  margin-top: 3%;
-  z-index: 1;
-}
-
-
-@media (max-width: 767px){
-  #bg{
-   margin-top: 10%;
-  }
-}
-
-#one{
-  text-align: center;
-}
-
-.motto{
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-}
-
-@media (max-width: 767px){
-  .motto{
-   font-size:1.5em;
-  }
-}
-
-
-.motto span{
-  font-variant: italic;
-  font-weight: 400;
-}
-
-
-
 .section{
   min-height: 100%;
   text-align: left;
@@ -115,81 +79,9 @@ body {
   background-color: #c6c6c6;
 }
 
-#team .header img{
-  border-radius: 50px;
-  max-width: 100px;
-}
-
 .dark{
   background-color: #090909;
   color: whitesmoke;
-}
-
-
-#rescue .l-box{
-  margin: 0 1em 0 1em;
-  padding: 1em;
-}
-
-.joy{
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 3em;
-  text-align: center;
-  margin: 1em;
-}
-
-.statement{
-  font-family: courier, fixed;
-  font-size: 2em;
-  border-radius: 5px;
-  margin: 0 1em 0 1em;
-
-  background-color: #CC0000;
-  color:white;
-  -moz-box-shadow: 0 0 10px 0px #000;
-  -webkit-box-shadow: 0 0 10px 0px #000;
-  box-shadow: 0 0 10px 0px #000;
-}
-
-.further{
-  font-size: 0.5em;
-}
-
-.mail{
-  font-family: courier, fixed;
-  font-size: 0.8em;
-}
-
-.badge{
-  color: #cc0000;
-}
-.caret {
-  background: whitesmoke;
-}
-
-#twitter-widget-0, .twitter-timeline{
-  display: none;
-}
-
-.padding-20{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.loading {
-  font-size: 3em;
-  font-weight: 300;
-  font-family: Lato;
-  display: inline-block;
-  margin-bottom: 100px;
-  color: #D4D4D4;
-}
-
-@media (max-width: 767px){
-  .loading{
-    font-size: 2em;
-  }
 }
 
 .title h2{
@@ -214,6 +106,153 @@ body {
   .title{
     padding: 0.5em;
     margin: 0 0.5em 0.5em 0.5em;
+  }
+}
+
+/*
+ * SECTION OPENING
+ */
+
+#redcross {
+  width: 40%;
+  max-width: 400px;
+  margin-top: 3%;
+  z-index: 1;
+}
+
+
+@media (max-width: 767px){
+  #redcross{
+   margin-top: 10%;
+  }
+}
+
+#opening{
+  text-align: center;
+}
+
+.motto{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+@media (max-width: 767px){
+  .motto{
+   font-size:1.5em;
+  }
+}
+
+
+.motto span{
+  font-variant: italic;
+  font-weight: 400;
+}
+
+/*
+ * SECTION RESCUE
+ */
+
+.caret {
+  background: whitesmoke;
+}
+
+/*
+ * SECTION TEAM
+ */
+
+
+#team .header img{
+  border-radius: 50px;
+  max-width: 100px;
+}
+
+
+
+#rescue .l-box{
+  margin: 0 1em 0 1em;
+  padding: 1em;
+}
+
+.statement{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  text-align: center;
+  margin: 1em;
+}
+
+.markdown{
+  font-family: courier, fixed;
+  font-size: 2em;
+  border-radius: 5px;
+  margin: 0 1em 0 1em;
+
+  background-color: #CC0000;
+  color:white;
+  -moz-box-shadow: 0 0 10px 0px #000;
+  -webkit-box-shadow: 0 0 10px 0px #000;
+  box-shadow: 0 0 10px 0px #000;
+}
+
+.member{
+  font-family: 'Lato';
+  font-size: 1.2em;
+  color: #222;
+  margin:20px;
+  padding:50px;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.member .header{
+  font-family: 'Cassannet';
+  font-size: 1.5em;
+}
+
+.member{
+  background-color: #CC0000;
+  color:white;
+    -moz-box-shadow: 0 0 10px 0px #000;
+  -webkit-box-shadow: 0 0 10px 0px #000;
+  box-shadow: 0 0 10px 0px #000;
+}
+
+.member .description {
+  padding-bottom: 20px;
+}
+
+.member .social a {
+  color:white;
+  text-decoration: none;
+}
+
+/*
+ * SECTION TWEETS
+ */
+
+#twitter-widget-0, .twitter-timeline{
+  display: none;
+}
+
+.padding-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.loading {
+  font-size: 3em;
+  font-weight: 300;
+  font-family: Lato;
+  display: inline-block;
+  margin-bottom: 100px;
+  color: #D4D4D4;
+}
+
+@media (max-width: 767px){
+  .loading{
+    font-size: 2em;
   }
 }
 
@@ -291,6 +330,14 @@ body {
 }
 
 
+.icon-quote-left {
+  margin-right: 5px;
+}
+
+.icon-quote-right {
+  margin-left: 5px;
+}
+
 .spinner {
   height:20px;
   width:20px;
@@ -334,38 +381,32 @@ body {
   to {transform: rotate(359deg);}
 }
 
+ /*
+ * SECTION CONTACT
+ */
 
-.member{
-  font-family: 'Lato';
-  font-size: 1.2em;
-  color: #222;
-  margin:20px;
-  padding:50px;
-  height: 300px;
-  border-radius: 5px;
+
+.further{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
   text-align: center;
+  margin: 1em;
 }
 
-.member .header{
-  font-family: 'Cassannet';
-  font-size: 1.5em;
+.mail{
+  font-family: courier, fixed;
+  font-size: 0.8em;
 }
 
-.member{
-  background-color: #CC0000;
-  color:white;
-    -moz-box-shadow: 0 0 10px 0px #000;
-  -webkit-box-shadow: 0 0 10px 0px #000;
-  box-shadow: 0 0 10px 0px #000;
+
+.badge{
+  color: #cc0000;
 }
 
-.icon-quote-left {
-  margin-right: 5px;
-}
 
-.icon-quote-right {
-  margin-left: 5px;
-}
+
+
 
 .animated {
 -webkit-animation-duration: 0.3s;
@@ -379,11 +420,11 @@ animation-fill-mode: both;
 }
 
 @media (max-width: 480px){
-  .statement{
+  .markdown{
     font-size: 1em;
   }
 
-  .joy {
+  .statement {
     font-size: 1.5em;
   }
 
@@ -406,11 +447,3 @@ animation-fill-mode: both;
   
 }
 
-.member .description {
-    padding-bottom: 20px;
-  }
-
-  .member .social a {
-    color:white;
-    text-decoration: none;
-  }

@@ -196,14 +196,21 @@ body {
 }
 
 .member{
+  position: relative;
   font-family: 'Lato';
   font-size: 1.2em;
   color: #222;
   margin:20px;
   padding:50px;
-  height: 300px;
+  height: 350px;
   border-radius: 5px;
   text-align: center;
+}
+
+.member .social {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .member .header{
@@ -223,10 +230,16 @@ body {
   padding-bottom: 20px;
 }
 
+
 .member .social a {
   color:white;
   text-decoration: none;
 }
+
+
+
+
+
 
 /*
  * SECTION TWEETS
@@ -405,7 +418,25 @@ body {
 }
 
 
+/*
+ * FOOTER
+ */
 
+ .footer{
+  padding: 20px 0;
+  color: #868686;
+  font-size: 0.8em;
+ }
+
+.footer a{
+  color: #868686;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color: #cc0000;
+  text-decoration: none;
+}
 
 
 .animated {
@@ -445,5 +476,12 @@ animation-fill-mode: both;
     font-weight: 400;
   }
   
+}
+
+@media (max-width: 1224px) {
+  .member {
+    padding:30px;
+  }
+
 }
 

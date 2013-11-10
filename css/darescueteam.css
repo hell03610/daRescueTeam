@@ -9,11 +9,14 @@ html, body {
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1224px){
   body{
    position: inherit;
    height: auto;
   }
+}
+
+@media (max-width: 1024px){
   .section{
     padding-bottom: 50px;
   }
